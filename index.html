@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+      body {
+        text-align: center;
+        background-image: url(https://cdn1.vectorstock.com/i/1000x1000/62/75/jungle-path-game-background-vector-20736275.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #canvas {
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 800px 800px;
+        background-color: antiquewhite;
+        margin-top: 60px;
+        border: 20px green;
+      }
+      #container{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+      }
+      #title{
+          padding-right: 40px;
+      }
+      #but{
+          padding: 20px;
+      }
+      #butt{
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        margin-right: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="title">
+        <img
+          src="https://cdn.techinasia.com/wp-content/uploads/2014/12/SnakeItUpLogoTiles-Background.png"
+          alt="title"
+        />
+        <div id="but">
+            <button onclick="start()" id="butt">Start</button>
+            <button onclick="pause()" id="butt">Pause</button>
+          </div>
+      </div>
+      <div>
+        <canvas id="canvas"> </canvas>
+      </div>
+    </div>
+  </body>
+  <script src="snake.js"></script>
+</html>
